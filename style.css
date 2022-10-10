@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*font-family: ;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #eaf6ff;
+}
+
+.container{
+    position: relative;
+    /* height: 350px;
+    width: 300px; */
+    background-color: white;  
+    padding: 70px 30px; 
+    box-shadow: 25px 25px 30px rgba(9, 148, 255, 0.25), 
+                -10px -10px 30px rgba(9, 148, 255, 0.25),
+                inset -5px -5px 15px rgba(9, 148, 255, 0.5); ;
+    border-radius: 20px;  
+}
+
+.container h2{
+    text-align: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: rgba(9, 148, 255, 0.7);
+}
+
+.form-content{
+    position: relative;
+    margin: 20px 0px 20px;
+}
+
+.form-content input{
+    background-color: transparent;
+    color: #000;
+    border: 0;
+    margin: 15px 0px 5px;
+    border-bottom: 2px solid rgba(9, 148, 255, 0.25);
+    width: 100%;
+}
+
+.form-content input:focus, .form-content input:valid{
+    outline: 0;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: rgba(9, 148, 255, 0.7);
+    border: 0;
+}
+
+.btn:focus{
+    outline: none;
+    transform: scale(0.98);
+}
+
+.form-content label{
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.form-content label span{
+    display: inline-block;
+    transition: transform 0.3s ease-in;
+}
+
+.form-content input:focus + label span, .form-content input:valid + label span{
+    transform: translateY(-30px);
+}
